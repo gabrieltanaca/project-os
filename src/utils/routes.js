@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import Landing from "../pages/Landing/landing";
 import OsListPage from "../pages/OsListPage/OsListPage";
+import ListOs from "../pages/ListOs/listOS";
 
 function PathRoutes() {
   return (
@@ -10,6 +11,7 @@ function PathRoutes() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/oslist" element={<OsListPage />} />
+        <Route path="listos" element={<ListOs />} />
       </Routes>
     </BrowserRouter>
   );
