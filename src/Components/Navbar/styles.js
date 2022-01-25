@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const NavbarMenu = styled.div`
-  background-color: #0a0a0a;
   height: 80px;
   display: flex;
   justify-content: start;
@@ -9,7 +8,8 @@ export const NavbarMenu = styled.div`
 `;
 
 export const NavMenu = styled.nav`
-  background-color: #0a0a0a;
+  background-color: #1a1c1e;
+  z-index: 99;
   width: 16vw;
   min-width: 200px;
   height: 100vh;
@@ -26,7 +26,6 @@ export const NavMenu = styled.nav`
   }
 
   .nav-toggle {
-    background-color: #0a0a0a;
     width: 100%;
     height: 80px;
     display: flex;
@@ -37,25 +36,39 @@ export const NavMenu = styled.nav`
 
 export const NavText = styled.div`
   display: flex;
-  justify-content: start;
   align-items: center;
-  padding: 8px 0px 8px 16px;
+  padding: 8px 16px;
+  margin: 8px 16px;
+  border-radius: 4px;
   list-style: none;
-  height: 60px;
 
   a {
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 18px;
-    width: 95%;
-    height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 16px;
-    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  &:hover {
+    background-color: #6239eb;
+    path {
+      color: #fff;
+    }
+  }
+`;
 
-    &:hover {
-      background-color: #b40421;
+export const ShowSidebarButton = styled.button`
+  background-color: #303234;
+  padding: 8px;
+  margin-left: 7rem;
+  font-size: 1.1rem;
+  border-radius: 100%;
+
+  &:hover {
+    background-color: #6239eb;
+    path {
+      color: #fff;
     }
   }
 `;
