@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', cursive;
     font-size: 16px;
     scroll-behavior:smooth;
+    box-sizing: border-box;
   }
 `;
 

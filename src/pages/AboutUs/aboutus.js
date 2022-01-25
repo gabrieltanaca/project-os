@@ -1,13 +1,12 @@
-import React from 'react';
-import Navbar from '../../Components/Navbar/navbar';
+import React from "react";
+import { Container } from "./styles";
 
 const AboutUs = () => {
-    return(
-        <>  
-            <Navbar />
-            <h1 className='aboutus'>About Us</h1>
-        </>
-    );
-}
+  return (
+    <Container>
+      <h1 className="aboutus">About Us</h1>
+    </Container>
+  );
+};
 
 export default AboutUs;

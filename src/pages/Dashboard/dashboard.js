@@ -1,13 +1,12 @@
-import React from 'react';
-import Navbar from '../../Components/Navbar/navbar';
+import React from "react";
+import { Container } from "../Contact/styles";
 
 const Dashboard = () => {
-    return(
-        <>  
-            <Navbar />
-            <h1 className='dashboard'>Dashboard</h1>
-        </>
-    );
-}
+  return (
+    <Container>
+      <h1 className="dashboard">Dashboard</h1>
+    </Container>
+  );
+};
 
 export default Dashboard;

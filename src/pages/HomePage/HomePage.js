@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Container } from "./styles";
 
-function Landing() {
+function HomePage() {
   return (
     <Container>
       <p className="text-5xl font-bold mb-4 text-red-400">Home</p>
@@ -15,4 +15,4 @@ function Landing() {
   );
 }
 
-export default Landing;
+export default HomePage;

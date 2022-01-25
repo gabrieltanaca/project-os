@@ -1,13 +1,12 @@
-import React from 'react';
-import Navbar from '../../Components/Navbar/navbar';
+import React from "react";
+import { Container } from "./styles";
 
 const Contact = () => {
-    return(
-        <>  
-            <Navbar />
-            <h1 className='contact'>Contato</h1>
-        </>
-    );
-}
+  return (
+    <Container>
+      <h1 className="contact">Contato</h1>
+    </Container>
+  );
+};
 
 export default Contact;
