@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar/navbar';
 
-const ListOs = () => {
+const AboutUs = () => {
     return(
         <>  
             <Navbar />
-            <h1 className='listOs'>List Order Of Service</h1>
+            <h1 className='aboutus'>About Us</h1>
         </>
     );
 }
 
-export default ListOs;
+export default AboutUs;

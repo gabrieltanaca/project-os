@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     margin: 0;
     padding: 0;
-    background: white;
+    background: black;
     color: #FFFFFF;
     font-family: 'Poppins', cursive;
     font-size: 16px;
