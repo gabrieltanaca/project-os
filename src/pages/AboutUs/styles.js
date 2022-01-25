@@ -1,11 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 100vh;
-  width: 100vw;
-
   display: flex;
+  height: 90vh;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  font-size: 3rem;
 `;
