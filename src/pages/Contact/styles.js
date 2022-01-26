@@ -47,11 +47,14 @@ export const Textarea = styled.textarea`
 export const Button = styled.button`
   float: right;
   border: 0;
-  background: #EF233C;
+  background: #303234;
   color: white;
   padding: 12px 50px;
   border-radius: 20px;
   cursor: pointer;
+  &:hover {
+    background-color: #6239eb;
+  }
 `;
 
 
