@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   margin: 0;
@@ -8,6 +8,10 @@ export const Container = styled.div`
 export const FormDiv = styled.div`
   background-size: cover;
   padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const H1 = styled.h1`
@@ -17,7 +21,7 @@ export const H1 = styled.h1`
 
 export const Form = styled.form`
   max-width: 600px;
-  margin auto;
+  width:100%;
   padding: 0 10px;
   overflow: hidden;
 `;
@@ -40,8 +44,9 @@ export const Textarea = styled.textarea`
   border: 0;
   background: #111;
   padding: 20px 40px;
-  resize: both;
-  height: 120px;
+  resize: block;
+  max-height: 220px;
+  min-height: 120px;
 `;
 
 export const Button = styled.button`
@@ -56,5 +61,3 @@ export const Button = styled.button`
     background-color: #6239eb;
   }
 `;
-
-
