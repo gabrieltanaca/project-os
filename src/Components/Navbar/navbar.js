@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 import { FaBars, FaLastfmSquare } from "react-icons/fa";
 import { HiOutlineChevronDoubleLeft } from "react-icons/hi";
 import { Link } from "react-router-dom";
@@ -6,11 +6,10 @@ import { IconContext } from "react-icons/lib";
 
 import { SideBarData } from "../../utils/SideBarData";
 import { NavbarMenu, NavMenu, NavText, ShowSidebarButton } from "./styles";
+import { NavContext } from "../../contexts/NavContext";
 
 const Navbar = () => {
-  const [sidebar, setSidebar] = useState(false);
-
-  const showSidebar = () => setSidebar(!sidebar);
+  const {activeSideBar, showSidebar} = useContext(NavContext)
 
   return (
     <>
@@ -20,7 +19,7 @@ const Navbar = () => {
             <FaBars color="#fff" />
           </button>
         </NavbarMenu>
-        <NavMenu className={sidebar && "active"}>
+        <NavMenu className={activeSideBar && "active"}>
           <ul className="w-full">
             <li className="nav-toggle">
               <Link to={"/"} className="ml-8 text-[2.5rem]">

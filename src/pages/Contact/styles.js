@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  width: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
 `;
@@ -21,7 +23,7 @@ export const H1 = styled.h1`
 
 export const Form = styled.form`
   max-width: 600px;
-  width:100%;
+  width: 100%;
   padding: 0 10px;
   overflow: hidden;
 `;
