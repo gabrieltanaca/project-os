@@ -10,7 +10,7 @@ export const NavbarMenu = styled.div`
 export const NavMenu = styled.nav`
   background-color: #1a1c1e;
   z-index: 99;
-  width: 16vw;
+  width: 17.5vw;
   min-width: 200px;
   height: 100vh;
   display: flex;
