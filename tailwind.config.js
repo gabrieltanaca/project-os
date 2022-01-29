@@ -1,13 +1,10 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-   theme: {
+  theme: {
     extend: {
       margin: {
-        '21': '5.25rem',
-      }
-    },
-    fontSize: {
-      '2xr': '2rem',
+        21: "5.25rem",
+      },
     },
   },
   plugins: [],

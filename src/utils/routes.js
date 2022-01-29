@@ -1,17 +1,17 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
-import HomePage from "../pages/HomePage/HomePage";
-import ListOs from "../pages/ListOs/ListOs";
-import Dashboard from "../pages/DashBoard/Dashboard";
-import AboutUs from "../pages/AboutUs/AboutUs";
-import Contact from "../pages/Contact/Contact";
-import Navbar from "../Components/Navbar/Navbar";
+import HomePage from "../pages/HomePage/homePage";
+import ListOs from "../pages/ListOs/listOS";
+import Dashboard from "../pages/Dashboard/dashboard";
+import AboutUs from "../pages/AboutUs/aboutus";
+import Contact from "../pages/Contact/contact";
+import Navbar from "../Components/Navbar/navbar";
 
 function PathRoutes() {
   return (
     <BrowserRouter>
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
